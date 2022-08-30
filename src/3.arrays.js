@@ -12,7 +12,9 @@ function indexOf(arr, item) {
 // Sum: you should be able to sum the items of an array
 // Example: arr = [1,2,3]   =>  6
 function sum(arr) {
-  return ;
+  const initValue = 0;
+  const overallSum = arr.reduce((previousValue, CurrentValue) => previousValue + CurrentValue, initValue)
+  return overallSum;
 }
 
 // Filter: Should filter out all instances of a value from an array
