@@ -17,8 +17,8 @@ function fizzBuzz(num) {
     finalAnswer = 'buzz';
   } else if (!num % 3 == 0 || !num % 5 == 0) {
     finalAnswer = num;
-  } else if (varA != 'number') {
-    finalAnswer = false;
+  } else {
+    finalAnswer = varA;
   }
   return finalAnswer
 }
