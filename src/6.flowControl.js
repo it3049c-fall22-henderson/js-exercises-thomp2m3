@@ -7,7 +7,6 @@
  *    if no number was provided or if the value provided wasn't a number (hint: typeof), return false
  */
 function fizzBuzz(num) {
-  let varA = typeof(num);
   let finalAnswer;
   if (num % 3 == 0 && num % 5 == 0) {
     finalAnswer = 'fizzbuzz';
@@ -17,8 +16,8 @@ function fizzBuzz(num) {
     finalAnswer = 'buzz';
   } else if (!num % 3 == 0 || !num % 5 == 0) {
     finalAnswer = num;
-  } else {
-    finalAnswer = varA;
+  } else if (num === null || typeof num != 'number') {
+    finalAnswer = false;
   }
   return finalAnswer
 }
